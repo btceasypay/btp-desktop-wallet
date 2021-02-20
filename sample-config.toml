@@ -1,0 +1,37 @@
+#configFile="" #Your config.toml profile directory
+#appDataDir="" # Your DB storage path
+#logDir="" # log path
+#network="mainnet" #network mainnet,testnet,privnet default testnet
+network="testnet"
+#Btpd
+QServer="127.0.0.1:8131"
+QUser="admin"
+QPass="123456"
+QNoTLS=true #Whether to start TLS corresponding to btp
+QTLSSkipVerify=true
+WalletPass="public" #Wallet encryption code default public
+
+MinTxFee=200000
+Confirmations=15   # Number of block confirmations
+CoinbaseMaturity=800 # Number of CoinBase confirmations
+
+#web model
+#listeners=["127.0.0.1:8130"]
+#rpcUser=""
+#rpcPass=""
+#ui=true
+
+
+BtpdSelect = "local"
+
+[[Btpds]]
+  Name = "local"
+  RPCUser = "btp"
+  RPCPassword = "123456"
+  RPCServer = "127.0.0.1:18130"
+  RPCCert = ""
+  NoTLS = true
+  TLSSkipVerify = true
+  Proxy = ""
+  ProxyUser = ""
+  ProxyPass = ""
